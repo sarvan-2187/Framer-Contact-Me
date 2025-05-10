@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me- Sarvan Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heading">
+        <a href="https://sarvan-kumar.framer.website">🏠︎</a><br><br>
+        <h1>Get in Touch!</h1>
+    </div>
+    <form method="POST" id="form">
+        <label for="name">Name:</label><br><br>
+        <input type="text" name="name" required id="name" placeholder="Name"><br><br>
+        <input type="hidden" name="access_key" value="7af1432a-847c-4679-8b8f-e55d934beb1a">
+        <label for="email">Email:</label><br><br>
+        <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+        <label for="message">Message:</label><br><br>
+        <textarea name="message" id="message" required placeholder="Type Your Message...."></textarea><br><br>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <div class="submit-div">
+            <button type="submit" class="submit-btn">Submit Form 🚀</button><br>
+        </div>
+        <div id="result"></div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
