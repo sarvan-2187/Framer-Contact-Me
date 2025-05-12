@@ -3,32 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me- Sarvan Kumar</title>
+    <title>Contact Me - Sarvan Kumar</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="heading">
-        <a href="https://sarvan-kumar.framer.website">🏠︎</a><br><br>
+        <a href="https://sarvan-kumar.framer.website" style="font-size: 24px;">
+            <i class="fa fa-home"></i>
+        </a><br><br>
         <h1>Get in Touch!</h1>
     </div>
+
     <form method="POST" id="form">
         <label for="name">Name:</label><br><br>
         <input type="text" name="name" required id="name" placeholder="Name"><br><br>
+
         <input type="hidden" name="access_key" value="7af1432a-847c-4679-8b8f-e55d934beb1a">
+
         <label for="email">Email:</label><br><br>
         <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+
         <label for="message">Message:</label><br><br>
         <textarea name="message" id="message" required placeholder="Type Your Message...."></textarea><br><br>
+
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
         <div class="submit-div">
-            <button type="submit" class="submit-btn">Submit Form 🚀</button><br>
+            <button type="submit" class="submit-btn">Submit Form</button><br>
         </div>
+
         <div id="result"></div>
     </form>
-    </div>
+
     <script src="script.js"></script>
     <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="wu2YgNi9Pd6qET2LDGxSd";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+        (function(){
+            if(!window.chatbase || window.chatbase("getState") !== "initialized"){
+                window.chatbase = (...arguments) => {
+                    if(!window.chatbase.q){ window.chatbase.q = [] }
+                    window.chatbase.q.push(arguments)
+                };
+                window.chatbase = new Proxy(window.chatbase, {
+                    get(target, prop) {
+                        if(prop === "q"){ return target.q }
+                        return (...args) => target(prop, ...args)
+                    }
+                });
+            }
+            const onLoad = function(){
+                const script = document.createElement("script");
+                script.src = "https://www.chatbase.co/embed.min.js";
+                script.id = "wu2YgNi9Pd6qET2LDGxSd";
+                script.domain = "www.chatbase.co";
+                document.body.appendChild(script)
+            };
+            if(document.readyState === "complete"){
+                onLoad()
+            } else {
+                window.addEventListener("load", onLoad)
+            }
+        })();
+    </script>
 </body>
 </html>
