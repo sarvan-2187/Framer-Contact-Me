@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +8,8 @@
 }
 
 body {
-    background-color: #f5f5f5;
-    color: #000000;
+    background-color: #121212;
+    color: #f5f5f5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,22 +23,22 @@ body {
     text-align: center;
 }
 
-.heading a{
+.heading a {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #5a5a5a;
+    color: #aaaaaa;
     transition: all 0.5s ease;
 }
 
-.heading a:hover{
-    color: #000000;
+.heading a:hover {
+    color: #ffffff;
 }
 
 .heading h1 {
     font-size: 2.5rem;
     font-weight: 900;
-    color: #000000;
+    color: #ffffff;
     position: relative;
     padding-bottom: 10px;
 }
@@ -50,40 +51,41 @@ body {
     transform: translateX(-50%);
     width: 70px;
     height: 3px;
-    background: black
+    background: #ffffff;
 }
 
 form {
-    background-color: transparent;
+    background-color: #1e1e1e;
     padding: 2.5rem;
     border-radius: 12px;
     width: 100%;
     max-width: 500px;
     transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 label {
-    font-weight: 500;
     font-weight: 700;
-
-    color: #555;
+    color: #cccccc;
     font-size: 1rem;
 }
 
 input, textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 8px;
     font-size: 1rem;
+    background-color: #2b2b2b;
+    color: #f5f5f5;
     transition: all 0.3s ease;    
     font-weight: 700;
     outline: none;
 }
 
 input:focus, textarea:focus {
-    border-color: #000000;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+    border-color: #ffffff;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
 }
 
 textarea {
@@ -91,15 +93,15 @@ textarea {
     resize: vertical;
 }
 
-.submit-div{
+.submit-div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .submit-btn {
-    background: black;
-    color: white;
+    background: #ffffff;
+    color: #121212;
     border: none;
     padding: 18px 25px;
     border-radius: 8px;
@@ -109,7 +111,7 @@ textarea {
     transition: all 0.3s ease;
     width: 50%;
     margin-top: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
     scale: 1;
 }
 
@@ -123,21 +125,20 @@ textarea {
     border-radius: 8px;
     text-align: center;
     font-weight: 900;
-    color: rgb(0, 0, 0);
 }
 
 .success {
     background-color: rgba(46, 204, 113, 0.2);
-    color: #27ae60;
+    color: #2ecc71;
 }
 
 .error {
     background-color: rgba(231, 76, 60, 0.2);
-    color: #c0392b;
+    color: #e74c3c;
 }
 
 ::placeholder {
-    color: #aaa;
+    color: #bbb;
     opacity: 1;
 }
 
@@ -145,7 +146,7 @@ textarea {
     form {
         padding: 1.5rem;
     }
-    
+
     .heading h1 {
         font-size: 2rem;
     }
